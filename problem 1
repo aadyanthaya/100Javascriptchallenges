@@ -1,0 +1,4 @@
+function largeOrde(nums){
+  return nums.sort((a,b)=> b-a );
+}
+console.log(largeOrde([8,7,3,8]));
