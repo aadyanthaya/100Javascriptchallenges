@@ -1,0 +1,12 @@
+function sumofeven(nums){
+  let sumno = 0 ;
+  let n = nums.length;
+for(let i = 0; i< n ;i++){
+  if( nums[i] % 2 === 0)
+  {  sumno = sumno + nums[i];
+    console.log(sumno) }
+}
+return sumno;
+}
+
+console.log(sumofeven([2 ,7 ,6 ,3,4]));
