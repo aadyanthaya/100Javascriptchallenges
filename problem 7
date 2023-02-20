@@ -1,0 +1,15 @@
+
+
+
+function isPrime(nums){
+
+  for(let i= 2; i <= Math.sqrt(nums) ;i++)
+{
+  if(nums % i === 0|| i <=1){
+    return false;
+  } }
+  return true;
+}
+
+
+console.log(isPrime(11));
