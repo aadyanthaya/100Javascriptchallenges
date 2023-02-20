@@ -1,0 +1,13 @@
+function  palin(str){
+let n = str.length;
+console.log(n);
+for(let i = 0 , j = n-1 ;i < n/2 < j ; i++ ,j--)
+{ 
+ if(str[i] !== str[j])
+  { return false;}
+}
+return true;
+ 
+
+}
+//console.log(palin("malayalam"));
