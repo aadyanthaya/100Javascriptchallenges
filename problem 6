@@ -1,0 +1,12 @@
+function uniquearray(number){
+  let n = number.length;
+  let uniquenum = [];
+ 
+  for(let i = 0 ; i < n ;i++){
+    if (uniquenum.indexOf(number[i]) === -1)
+    {  uniquenum.push(number[i]);}
+  } 
+return uniquenum;
+}
+
+console.log(uniquearray([9,8,7,13,44,4,4,4,4,4,4,11,6,6,6,6,8,2,3,1]));
