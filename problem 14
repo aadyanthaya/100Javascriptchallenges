@@ -1,0 +1,11 @@
+function arrayOdd(input)
+{ let n = input.length;
+  let output = [];
+  for(let i = 0 ; i < n; i++)
+  { if( input[i] % 2 != 0 )
+  {output.push(input[i])}
+}
+  return output;
+
+}
+console.log(arrayOdd([3,4,4,1,7,3,2]))
