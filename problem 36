@@ -1,0 +1,13 @@
+function wordAlphabeticalreverse(input)
+{
+  let output = input.split('').sort().join('').trim();
+  let first = "";
+  let n = output.length;
+  for(let i =n-1 ;i >= 0 ; i-- )
+      { first = first + output[i];
+         
+      }
+
+      return first;
+}
+console.log(wordAlphabeticalreverse('hello world man '))
