@@ -1,0 +1,9 @@
+function divisibleArray(input, num)
+{let n =input.length;
+  let output =[];
+  for(let i= 0 ;i<n; i++)
+  {   if ( input[i] % num === 0 ) 
+       { output.push(input[i]);}  }
+  return output;
+}
+console.log(divisibleArray([12,9,3,4,5,3,6] ,3) )
