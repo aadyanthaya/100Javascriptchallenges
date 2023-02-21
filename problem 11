@@ -1,0 +1,11 @@
+function largeNumber(input)
+{
+let n = input.length;
+let largeNo = input[0];
+for(let i =1; i <n ;i++)
+{ if (largeNo < input[i])
+   { largeNo = input[i];} 
+    }
+ return largeNo;
+}
+console.log(largeNumber([7,2,3,8,9]))
