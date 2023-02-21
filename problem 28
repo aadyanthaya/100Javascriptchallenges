@@ -1,0 +1,10 @@
+function lastString(input,name)
+{    let indexlast = 0;
+     let n = input.length;
+    for(let i=0; i< n;i++)
+       { if(name === input[i])
+      { indexlast = i} }
+      if(indexlast === 0)
+      { return -1}
+      return indexlast; }
+console.log(lastString(['me','mom','dad','meet','mom','dad','mom'],'mom'))
