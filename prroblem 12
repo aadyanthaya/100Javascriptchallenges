@@ -1,0 +1,12 @@
+function smallNumber(input)
+{ let n= input.length;
+  let smallNo = input[0];
+  for(let i=1; i<n ;i++)
+  {
+    if(smallNo > input[i ]){
+      smallNo = input[i];
+    }
+
+  }
+return smallNo;}
+console.log(smallNumber([9,2,4,5,6,1]))
