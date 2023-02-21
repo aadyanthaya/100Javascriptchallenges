@@ -1,0 +1,19 @@
+function firstCapital(input)
+{
+   let first = input[0].toUpperCase()
+  
+   let n = input.length;
+   for(let i= 1;i < n ; i++)
+    { if(input[i -1] === " ")
+       {first = first + input[i].toUpperCase()
+      
+      }
+       else
+       {first = first + input[i]
+         }
+
+    }
+    return first;
+
+}
+console.log(firstCapital('how are you ?'))
