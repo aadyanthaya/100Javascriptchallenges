@@ -1,0 +1,8 @@
+function wordAlphabetical(input)
+{
+  let output = input.split('').sort().join('').trim();
+  return output;
+}
+console.log(wordAlphabetical('hello world man '))
+
+function wordAlphabeticalreverse(input)
