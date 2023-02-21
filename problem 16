@@ -1,0 +1,10 @@
+function negativeNum(input){
+  let n = input.length;
+  let output =[];
+  for(let i =0; i<n ;i++)
+  {  if(input[i] < 0)
+     {output.push(input[i]);}
+  }
+  return output;
+}
+console.log(negativeNum([-1,2,-3,4,4,6,-10,-11]));
