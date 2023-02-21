@@ -1,0 +1,11 @@
+function removeVowel(input)
+{ let output=""
+ const vowels =['e','i','a','o','u']
+   let n = input.length;
+   for(let i=0 ; i <n ;i++)
+   { if(!vowels.includes(input[i]))
+        { output = output + input[i]} }
+        return output;
+
+}
+console.log(removeVowel("cataa"))
