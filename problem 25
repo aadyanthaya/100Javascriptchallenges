@@ -1,0 +1,13 @@
+
+function  smallestString(strgsSS)
+{ let smallestlen = strgsSS[0];
+  let len = strgsSS[0].length;
+  let n =strgsSS.length;
+  for(let i =0; i < n ;i++ )
+  {  if(len > strgsSS[i].length )
+      { len =strgsSS[i].length
+         smallestlen = strgsSS[i];
+         } }
+  return smallestlen;
+}
+console.log(smallestString(['hello','me','a','mom','dad','people']));
