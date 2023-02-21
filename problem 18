@@ -1,0 +1,16 @@
+function firstIndex(input,num)
+{
+  let n = input.length;
+ let output = 0;
+ for(let i =0; i<n; i++)
+ {
+   if(input[i] === num)
+   { output = i;
+     break; }
+ }
+ if (output === 0)
+ {return -1;}
+ return output;
+}
+
+console.log(firstIndex([2,1,3,1,3,22,1],4))
