@@ -1,0 +1,15 @@
+function  firstString(input,name)
+{ let indexFirst = 0;
+ // console.log(name);
+  let n = input.length;
+  for(let i =0 ;i <n ;i++)
+  { if(name === input[i])
+   {  indexFirst = i;
+       break;
+       }}
+       if(indexFirst === 0)
+       { return  -1;}
+  return indexFirst;
+}
+
+console.log(firstString(['me','mom','dad','meet','mom','dad','mom'],'mom'))
