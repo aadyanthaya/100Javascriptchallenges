@@ -1,0 +1,7 @@
+function longeststring(strgsAA)
+{ let len = 0;
+  let n = strgsAA.length;
+  for(let i=0 ;i< n; )
+
+}
+console.log(longeststring["hellllo","me","weeee"])
