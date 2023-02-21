@@ -1,0 +1,8 @@
+function capital(input)
+{ 
+  let output = input.toUpperCase();
+  return output;
+
+}
+
+console.log(capital('matters'))
