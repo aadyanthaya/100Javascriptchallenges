@@ -1,0 +1,12 @@
+Write a function that takes an array of numbers and returns the sum of all numbers in the array.
+function sumArray(input)
+{
+let sum = 0;
+ let n = input.length;
+  for(let i = 0 ; i < n ;i++)
+  { sum = sum + input[i]; 
+   }
+   return sum; 
+
+}
+console.log(sumArray([10,11,12,2,3,45,8]))
