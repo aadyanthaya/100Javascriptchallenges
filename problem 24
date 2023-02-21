@@ -1,0 +1,14 @@
+function longeststring(strgsAA)
+{ let  largestlen = strgsAA[0];
+  let len = strgsAA[0].length;
+  let n = strgsAA.length;
+  
+  for(let i=1 ;i< n;i++ )
+  {  if(len < strgsAA[i].length)
+     {  len = strgsAA[i].length
+        largestlen  = strgsAA[i]; }
+     }
+     
+  return  largestlen;
+}
+console.log(longeststring(['hellllo0','cherry','me','meow','bowbow']));
