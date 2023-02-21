@@ -1,0 +1,9 @@
+function numberOccurence(input,num)
+{ let output = [];
+  let n =input.length;
+  for(let i = 0 ; i< n;i++)
+  {  if(input[i] === num)
+     { output.push(input[i])}}
+     return output;
+}
+console.log(numberOccurence([1,5,4,3,5,5,5,52,5,1,1,5],5))
