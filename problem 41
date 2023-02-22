@@ -1,0 +1,12 @@
+function concateString(input)
+{ let n =input.length;
+  let output= " ";
+for(let i=0 ; i<n ; i++)
+{
+  if(input[i] != " ")
+  { output += input[i];}
+
+}
+  return output
+}
+console.log(concateString("the apple is good"))
