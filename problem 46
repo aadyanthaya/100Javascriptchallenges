@@ -1,0 +1,6 @@
+function  sortNumberDescending(numbers){
+numbers.sort((a,b)=>  b-a );
+return numbers;
+}
+
+console.log(sortNumberDescending(['2','30','1','29','11']))
