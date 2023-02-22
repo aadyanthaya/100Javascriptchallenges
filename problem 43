@@ -1,0 +1,17 @@
+function secondSmallest(input)
+{
+  let n = input.length;
+  let output = input[0] ;
+   let  secondSmallest = 0;
+
+   for(let i= 1; i< n;i++)
+   {   if(output > input[i])
+       { secondSmallest = output;
+         output = input[i];
+         
+       }
+
+   }
+   return secondSmallest
+
+}
