@@ -1,0 +1,7 @@
+function sortNumbersAscending(numbers) {
+
+ numbers.sort((a,b)=> a-b);
+  return numbers;
+}
+console.log(sortNumbersAscending(['2','30','1','29','11']))
+
