@@ -1,0 +1,24 @@
+function getmode(input)
+ {
+   let x = 0;
+   let n = input.length;
+   let frequency = {};
+   for (let i= 0; i < n; i++ )
+   {  x = input[i];
+      if(frequency[x])
+       {  frequency[x]++ }
+  else {  frequency[x] = 1}
+   }
+   const X = Object.keys(frequency);
+   let prev = -1;
+   let key = 0;
+   X.forEach((t)=> {
+     if(prev < frequency[t])
+     { 
+       prev = frequency[t];
+       key =t;
+}})
+ return key;
+ }
+
+ console.log(getmode([1,1,1,2,2,2,2,3,3,3,4,4]))
