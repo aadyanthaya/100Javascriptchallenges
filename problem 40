@@ -1,0 +1,19 @@
+function countletter(str)
+{
+ let n = str.length;
+  let count = {};
+  let char =" "
+  for(let i=0 ; i < n ;i++ )
+  {
+      char = str[i].toLowerCase();
+   
+        if(count[char])
+        { count[char]++}
+        else 
+        { count[char] = 1}
+        
+  }
+
+ return count
+}
+console.log(countletter("the apple is good"))
