@@ -1,0 +1,18 @@
+//Write a function that takes an array of objects and a key and returns a new array with only the objects that have a value for that key that is less than a given value.
+function filterMaxvalue(arar, key, maxvalue) {
+  const maxvaluefilter = arar.filter(
+    (obj) => obj[key] !== undefined && obj[key] < maxvalue
+  );
+
+  return maxvaluefilter;
+}
+
+const inputMaxValue = [
+  { name: "Alice", age: 25, score: 80 },
+  { name: "Bob", age: 30, score: 70 },
+  { name: "Charlie", age: 20 },
+  { name: "David", age: 35, score: 90 }
+];
+
+const maxvalue = filterMaxvalue(inputMaxValue, "score", 85);
+console.log(maxvalue);
