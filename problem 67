@@ -1,0 +1,22 @@
+function smallestObjectValuess(arr, key) {
+  let smallestObj = null;
+  let smallestValue = Infinity;
+  for (let i = 0; i < arr.length; i++) {
+    const obj = arr[i];
+    const value = obj[key];
+    if (value !== undefined && value < smallestValue) {
+      smallestObj = obj;
+      smallestValue = value;
+    }
+  }
+  return smallestObj;
+}
+const inAnss = [
+  { name: "Alice", age: 25, score: 80 },
+  { name: "Bob", age: 30, score: 70 },
+  { name: "Charlie", age: 20, score: 90 },
+  { name: "David", age: 35 }
+];
+
+const smallesObjects = smallestObjectValuess(inAnss, "score");
+console.log(smallesObjects);
