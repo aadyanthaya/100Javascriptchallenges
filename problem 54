@@ -1,0 +1,15 @@
+function sortWord(s) {
+  let result = "";
+  let word = " ";
+  let c = s.length;
+  for (let i = 0; i < c; i++) {
+    word += s[i];
+
+    if (s[i] === " ") {
+      result += word.split("").sort().join("");
+      word = "";
+    }
+  }
+  return result;
+}
+console.log(sortWord("the hello world welcome back"));
