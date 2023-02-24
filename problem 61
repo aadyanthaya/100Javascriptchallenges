@@ -1,0 +1,25 @@
+//Write a function that takes an array of objects and a key and returns the average value of that key across all objects.
+
+function objectSum(arr, key) {
+  const sum = arr.reduce((acc, obj) => {
+    if (obj[key] !== undefined) {
+      return acc + obj[key];
+    } else {
+      return acc;
+    }
+  }, 0);
+
+  const avg = sum / arr.filter((obj) => obj[key] !== undefined).length;
+
+  return avg;
+}
+
+const inA = [
+  { name: "Alice", age: 25, score: 80 },
+  { name: "Bob", age: 30, score: 70 },
+  { name: "Charlie", age: 20, score: 90 },
+  { name: "David", age: 35 }
+];
+
+const averageVal = objectSum(inA, "score");
+console.log(averageVal);
