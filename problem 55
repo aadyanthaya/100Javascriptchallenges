@@ -1,0 +1,9 @@
+function sortLength(s) {
+  const word = s.split(" ");
+  word.sort((a, b) => a.length - b.length);
+
+  word.join(" ");
+
+  return word;
+}
+console.log(sortLength("the hello world welcome back"));
