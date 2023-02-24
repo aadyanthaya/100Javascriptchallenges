@@ -1,0 +1,24 @@
+function asciiShift(string, n) {
+  let result = " ";
+  for (let i = 0; i < string.length; i++) {
+    let char = string[i];
+    if (char.match(/[a-z]/i)) {
+      let asciiVal = char.toLowerCase().charCodeAt(0) - 97;
+      console.log(asciiVal);
+      let shiftedVal = (asciiVal + n) % 26;
+      console.log(shiftedVal);
+      let shiftchar = String.fromCharCode(shiftedVal + 97);
+      console.log(shiftchar);
+      if (char.match(/[A-Z]/)) {
+        result += shiftchar.toUpperCase();
+      } else {
+        result += shiftchar;
+      }
+    } else {
+      result += char;
+    }
+  }
+  return result;
+}
+
+console.log(asciiShift("abAB", 3));
