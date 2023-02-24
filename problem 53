@@ -1,0 +1,5 @@
+function sortAlpha(s) {
+  let c = s.split("").sort().join("");
+  return c;
+}
+console.log(sortAlpha("heloo"));
