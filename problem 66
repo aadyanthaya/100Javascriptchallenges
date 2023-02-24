@@ -1,0 +1,25 @@
+//Write a function that takes an array of objects and returns the object with the largest value for a given key.
+
+function largestObjectvaluesss(arr, key) {
+  let largestObj = null;
+  let largestValue = -Infinity;
+  for (let i = 0; i < arr.length; i++) {
+    const obj = arr[i];
+    const value = obj[key];
+    if (value != undefined && value > largestValue) {
+      largestObj = obj;
+      largestValue = value;
+    }
+  }
+  return largestObj;
+}
+
+const inAns = [
+  { name: "Alice", age: 25, score: 80 },
+  { name: "Bob", age: 30, score: 70 },
+  { name: "Charlie", age: 20, score: 90 },
+  { name: "David", age: 35 }
+];
+
+const largestObjects = largestObjectvaluesss(inAns, "score");
+console.log(largestObjects);
