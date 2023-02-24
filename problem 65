@@ -1,0 +1,21 @@
+/Write a function that takes an array of objects and a key and returns the smallest value for that key across all objects.
+function smallestValueByKey(arr, key) {
+  const smallest = arr.reduce((min, obj) => {
+    if (obj[key] !== undefined && obj[key] < min) {
+      return obj[key];
+    } else {
+      return min;
+    }
+  }, Infinity);
+
+  return smallest;
+}
+const inputArrrrry = [
+  { name: "Alice", age: 25, score: 80 },
+  { name: "Bob", age: 30, score: 70 },
+  { name: "Charlie", age: 20, score: 90 },
+  { name: "David", age: 35 }
+];
+
+const smallestScore = smallestValueByKey(inputArrrrry, "score");
+console.log(smallestScore);
