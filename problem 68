@@ -1,0 +1,24 @@
+/Write a function that takes an array of objects and a key and returns a new array with the values of that key for all objects.
+function listofValues(arr, key) {
+  const values = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    const obj = arr[i];
+    const value = obj[key];
+    console.log(value);
+    if (value != undefined) {
+      values.push(value);
+    }
+  }
+
+  return values;
+}
+
+const intAnss = [
+  { name: "Alice", age: 25, score: 80 },
+  { name: "Bob", age: 30, score: 70 },
+  { name: "Charlie", age: 20, score: 90 },
+  { name: "David", age: 40 }
+];
+const ValueObject = listofValues(intAnss, "score");
+console.log(ValueObject);
