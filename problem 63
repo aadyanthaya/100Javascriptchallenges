@@ -1,0 +1,22 @@
+//Write a function that takes an array of objects and a key and returns the largest value for that key across all objects.
+
+function largestObjectNummm(array, key) {
+  const largestNum = array.reduce((max, obj) => {
+    if (obj[key] !== undefined && obj[key] > max) {
+      return obj[key];
+    } else {
+      return max;
+    }
+  }, -Infinity);
+
+  return largestNum;
+}
+const inputArrayaaaa = [
+  { name: "Alice", age: 25, score: 80 },
+  { name: "Bob", age: 30, score: 70 },
+  { name: "Charlie", age: 20, score: 90 },
+  { name: "David", age: 35 }
+];
+
+const largestObject = largestObjectNummm(inputArrayaaaa, "score");
+console.log(largestObject);
