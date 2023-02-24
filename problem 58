@@ -1,0 +1,16 @@
+//Write a function that takes an array of objects and a key and returns a new array with only the objects that have a truthy value for that key.
+
+function objectArrayTruthy(arraya, key) {
+  const filteredA = arraya.filter((obj) => obj[key]);
+  return filteredA;
+}
+
+const inputArraya = [
+  { name: "Alice", age: 25, active: true },
+  { name: "Bob", age: 30, active: false },
+  { name: "Charlie", age: 20, active: true },
+  { name: "David", age: 35, active: true }
+];
+
+const filteredArr = objectArrayTruthy(inputArraya, "active");
+console.log(filteredArr);
