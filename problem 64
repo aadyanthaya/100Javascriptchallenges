@@ -1,0 +1,25 @@
+function largestValueByKey(arr, key) {
+  // use the reduce() method to find the largest value for the specified key
+  const largest = arr.reduce((max, obj) => {
+    if (obj[key] !== undefined && obj[key] > max) {
+      return obj[key];
+    } else {
+      return max;
+    }
+  }, -Infinity);
+
+  // return the largest value
+  return largest;
+}
+
+// Example usage:
+const inputArrrrr = [
+  { name: "Alice", age: 25, score: 80 },
+  { name: "Bob", age: 30, score: 70 },
+  { name: "Charlie", age: 20, score: 90 },
+  { name: "David", age: 35 }
+];
+
+const largestScore = largestValueByKey(inputArrrrr, "score");
+console.log(largestScore);
+// Output: 90
