@@ -1,0 +1,18 @@
+/ Write a function that takes an array of numbers and returns the sum of all the odd numbers in the array.
+
+function arrayofOdd(array1)
+{
+  let result =0;
+  for(let i=0 ; i< array1.length ; i++)
+  {   
+     if(array1[i] % 2  !== 0)
+      { result = result + array1[i];
+      }
+
+  }
+
+return result;
+}
+const arraaay2 = [1,2,3,4,5];
+const resultOdd = arrayofOdd(arraaay2)
+console.log(resultOdd);
