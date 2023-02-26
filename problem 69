@@ -1,0 +1,23 @@
+//Write a function that takes two arrays of numbers and returns a new array with the elements that appear in both arrays.
+
+function similarArray(arry1 , arry2)
+{
+  let result = []
+
+  for(let i =0 ; i < arry1.length ;i++)
+  {
+   const current = arry1[i];
+
+   if(arry2.indexOf(current) !== -1 &&  result.indexOf(current) === -1 )
+    {result.push(current); }
+
+  }
+
+  return result;
+}
+
+const array1 = [1,2,3,4,5];
+const array2 = [2,3,4,5,6];
+
+const result = similarArray(array1,array2);
+console.log(result);
