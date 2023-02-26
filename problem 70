@@ -1,0 +1,30 @@
+/Write a function that takes two arrays of numbers and returns a new array with the elements that appear in only one array.
+function  notinArrays(arry1 , arry2)
+{
+  let result = []
+  for(let i=0; i< arry1.length ; i++)
+  {  const current = arry1[i];
+    
+    if(arry2.indexOf(current) === -1 && result.indexOf(current) === -1)
+    {
+                result.push(current);
+    }
+  }
+
+  for(let j = 0; j< arry2.length ;j++)
+   {   const current = arry2[j];
+      if(arry1.indexOf(current) === -1 && result.indexOf(current) === -1)
+      {            
+                result.push(current);
+      }
+  
+  }
+
+  return result;
+}
+
+const arra1 = [1,2,3,4,5];
+const arra2 = [2,3,4,5,6];
+
+const resultA = notinArrays(arra1,arra2);
+console.log(resultA);
