@@ -1,0 +1,22 @@
+//Write a function that takes two arrays of numbers and returns a new array with the elements that appear in the first array but not the second.
+
+function uniqueArray(arry1 ,arry2)
+{
+   let result =[]
+
+   for(let i= 0 ; i < arry1.length ; i++)
+   {  const current = arry1[i];
+      
+         
+     if(arry2.indexOf(current) === -1 &&  result.indexOf(current) === -1 )
+      { result.push(current);}
+       }
+
+       return result;
+}
+
+const arraa1 = [1,2,3,4,5];
+const arraa2 = [2,3,4,5,6];
+
+const resultAA = uniqueArray(arraa1,arraa2);
+console.log(resultAA);
