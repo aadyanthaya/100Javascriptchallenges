@@ -1,0 +1,16 @@
+function isIpv4addresss(str) {
+  const parts = str.split(".");
+
+  if (parts.length !== 4) {
+    return false;
+  }
+
+  for (const part of parts) {
+    if (!/^\d+$/.test(part) || part < 0 || part > 255) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isIpv4addresss("192.168.0.1"));
