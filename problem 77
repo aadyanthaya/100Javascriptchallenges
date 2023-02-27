@@ -1,0 +1,5 @@
+function decimalToNumber(input) {
+  return (input >>> 0).toString(2);
+}
+
+console.log(decimalToNumber(10));
