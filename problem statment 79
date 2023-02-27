@@ -1,0 +1,7 @@
+/Write a function that takes a number and returns its hexadecimal representation.
+
+function decimaltoHexadecimal(input) {
+  return input.toString(16);
+}
+
+console.log(decimaltoHexadecimal(23));
