@@ -1,0 +1,6 @@
+/Write a function that takes a hexadecimal number and returns its decimal representation.
+
+function hexatoDecimal(input) {
+  return parseInt(input, 16);
+}
+console.log(hexatoDecimal("1FF"));
