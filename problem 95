@@ -1,0 +1,24 @@
+//Write a function that takes a string and returns true if it is an anagram of a palindrome, false otherwise.
+function anagramisPal(str) {
+  const charCounts = {};
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charAt(i);
+    charCounts[char] = (charCounts[char] || 0) + 1;
+    console.log(charCounts);
+  }
+
+  let oddCount = 0;
+  for (const charCount of Object.values(charCounts)) {
+    console.log(charCount);
+    if (charCount % 2 === 1) {
+      oddCount++;
+
+      if (oddCount > 1) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+console.log(anagramisPal("racecar"));
