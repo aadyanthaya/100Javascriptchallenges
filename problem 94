@@ -1,0 +1,15 @@
+//Write a function that takes a string and returns true if it is a pangram, false otherwise.
+
+function isPangram(str) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let char = str.toLowerCase().replace(/[^a-z]/g, "");
+  console.log(char);
+  for (let i = 0; i < alphabet.length; i++) {
+    if (char.indexOf(alphabet.charAt(i)) === -1) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isPangram("The quick brown fox jumps over the lazy dog"));
