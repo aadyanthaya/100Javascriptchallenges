@@ -1,0 +1,19 @@
+//Write a function that takes an array of integers and returns the two numbers that add up to the closest number to a given target.
+
+function closestPair(array1, target) {
+  let closestSum = Infinity;
+  let closetpair = null;
+
+  for (let i = 0; i < array1.length; i++) {
+    for (let j = i + 1; j < array1.length; j++) {
+      const sum = array1[i] + array1[j];
+      const diff = Math.abs(target - sum);
+      if (diff < Math.abs(target - closestSum)) {
+        closestSum = sum;
+        closetpair = [array1[i], array1[j]];
+      }
+    }
+  }
+  return closetpair;
+}
+console.log(closestPair([1, 2, 3, 4, 5], 7));
