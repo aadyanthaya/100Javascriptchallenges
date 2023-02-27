@@ -1,0 +1,27 @@
+function isArmstrong(num)
+{
+let array1 = 0;
+let sum = 0;
+let product = 1;
+let product1 = 1;
+
+
+array1 = num.toString().split('').map(Number);
+let n = array1.length;
+
+for(let i =0 ; i < array1.length ; i++ )
+{
+   for (let j =0 ; j < n ;j++)
+    {
+       product = product * array1[i];
+      console.log(product);
+    }
+      sum += product;
+      product = 1;
+      
+  }
+return sum;
+
+}
+
+console.log(isArmstrong(153));
