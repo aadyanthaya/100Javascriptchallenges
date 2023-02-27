@@ -1,0 +1,31 @@
+//Write a function that takes an array of numbers and returns the sum of all the prime numbers in the array.
+
+function  sumPrime(array1)
+{
+ let result = 0;
+ 
+    function isPrime(num)
+    {
+      if(num <= 1)
+    { return false;}
+    
+ 
+ for(let i= 2 ; i <= Math.sqrt(num) ; i++){  
+      if( num  % i === 0)
+          {  return false;
+          }
+    }
+
+    return true;
+  }
+
+  for(let num of array1)
+      { if (isPrime(num))
+         { result += num; } }
+
+         return result;
+}
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sum = sumPrime(arr);
+console.log(sum);
