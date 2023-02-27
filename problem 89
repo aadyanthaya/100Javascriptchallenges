@@ -1,0 +1,7 @@
+//Write a function that takes an octal number and returns its decimal representation.
+function octaltoDecimal(input) {
+  return parseInt(input, 8);
+}
+
+console.log(octaltoDecimal("123"));
+//
