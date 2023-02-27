@@ -1,0 +1,14 @@
+function hasTwoSum(array, target) {
+  const set = new Set();
+  for (const num of array) {
+    const complement = target - num;
+    if (set.has(complement)) {
+      return true;
+    }
+    set.add(num);
+  }
+  return false;
+}
+console.log(hasTwoSum([1, 2, 3, 4, 5], 7)); // output: true
+console.log(hasTwoSum([1, 2, 3, 4, 5], 10)); // output: false
+console.log(hasTwoSum([1, 2, 3, 4, 5], 6)); // output: true
