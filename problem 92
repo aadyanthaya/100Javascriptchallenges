@@ -1,0 +1,14 @@
+//Write a function that takes a string and returns a new string with the characters in reverse order.
+
+function revesreString(str) {
+  let result = "";
+  let n = str.length;
+
+  for (let i = n - 1; i >= 0; i--) {
+    result += str[i];
+  }
+
+  return result;
+}
+
+console.log(revesreString("The hello world is lovely cat"));
