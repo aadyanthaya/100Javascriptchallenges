@@ -1,0 +1,12 @@
+//Write a function that takes a string and returns a new string with every other character removed.
+
+function removesecondChar(str) {
+  let result = "";
+  let n = str.length;
+  for (let i = 0; i < n; i += 2) {
+    result += str.charAt(i);
+  }
+  return result;
+}
+
+console.log(removesecondChar("the hello world is cat"));
