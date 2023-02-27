@@ -1,0 +1,6 @@
+/Write a function that takes a number and returns its octal representation.
+
+function decimaltoOctane(input) {
+  return input.toString(8);
+}
+console.log(decimaltoOctane(10));
